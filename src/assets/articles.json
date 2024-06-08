@@ -1,0 +1,56 @@
+[
+  {
+    "title": "The Future of Web Development",
+    "excerpt": "Explore the latest trends and technologies shaping the future of web development...",
+    "imageUrl": "https://via.placeholder.com/400x200",
+    "tags": ["Web Development", "Trends"]
+  },
+  {
+    "title": "Getting Started with Angular",
+    "excerpt": "A comprehensive guide to help you get started with Angular framework...",
+    "imageUrl": "https://via.placeholder.com/400x200",
+    "tags": ["Angular", "Guide"]
+  },
+  {
+    "title": "Mastering Tailwind CSS",
+    "excerpt": "Learn how to efficiently use Tailwind CSS to style your web applications...",
+    "imageUrl": "https://via.placeholder.com/400x200",
+    "tags": ["Tailwind CSS", "CSS"]
+  },
+  {
+    "title": "Responsive Design Best Practices",
+    "excerpt": "Tips and techniques for creating responsive web designs that work on any device...",
+    "imageUrl": "https://via.placeholder.com/400x200",
+    "tags": ["Responsive Design", "Web Design"]
+  },
+  {
+    "title": "Introduction to TypeScript",
+    "excerpt": "Get to know the basics of TypeScript and how it enhances JavaScript development...",
+    "imageUrl": "https://via.placeholder.com/400x200",
+    "tags": ["TypeScript", "JavaScript"]
+  },
+  {
+    "title": "Building Progressive Web Apps",
+    "excerpt": "A step-by-step guide to building progressive web apps that deliver a native app experience...",
+    "imageUrl": "https://via.placeholder.com/400x200",
+    "tags": ["PWA", "Web Apps"]
+  },
+  {
+    "title": "JavaScript Performance Optimization",
+    "excerpt": "Learn various techniques to optimize the performance of your JavaScript applications...",
+    "imageUrl": "https://via.placeholder.com/400x200",
+    "tags": ["JavaScript", "Performance"]
+  },
+  {
+    "title": "Effective Debugging in Angular",
+    "excerpt": "Tools and techniques for effectively debugging Angular applications...",
+    "imageUrl": "https://via.placeholder.com/400x200",
+    "tags": ["Angular", "Debugging"]
+  },
+  {
+    "title": "CSS Grid Layout: A Practical Guide",
+    "excerpt": "An in-depth guide to using CSS Grid Layout to create complex web layouts...",
+    "imageUrl": "https://via.placeholder.com/400x200",
+    "tags": ["CSS Grid", "CSS"]
+  }
+]
