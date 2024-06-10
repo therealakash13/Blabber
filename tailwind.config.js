@@ -6,6 +6,10 @@ module.exports = {
       fontFamily: {
         pacifico: ["Pacifico"],
       },
+      height: {
+        42: "168px",
+        49: "194px",
+      },
     },
   },
   plugins: [
