@@ -1,17 +1,22 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
+  loginToggle: boolean = false;
+  signupToggle: boolean = false;
   constructor(private router: Router) {}
-
-  navToSignIn() {
-    this.router.navigate(['/sign-in']);
+  toggleLoginModal() {
+    this.loginToggle = !this.loginToggle;
+  }
+  toggleSignupModal() {
+    this.signupToggle = !this.signupToggle;
   }
 }
