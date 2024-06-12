@@ -42,6 +42,8 @@
   <hr class="mt-0 mb-0 border-gray-700" />
 </nav>
 
+<!-- Add login form to form group and get value -->
+
 <!-- Login Modal -->
 <div
   *ngIf="loginToggle === true"
@@ -93,13 +95,20 @@
         </div>
         <div class="m-1">
           <div class="text-center">
-            <form class="space-y-6" action="#" method="POST">
+            <form
+              [formGroup]="loginForm"
+              (ngSubmit)="onsubmit(loginForm)"
+              class="space-y-6"
+              action="#"
+              method="POST"
+            >
               <div class="flex flex-row">
                 <label for="email" class="m-2 font-semibolds text-xl"
                   >Email</label
                 >
                 <div class="m-2 w-full">
                   <input
+                    formControlName="email"
                     id="email"
                     name="email"
                     type="email"
@@ -117,6 +126,7 @@
                 >
                 <div class="m-2 w-full">
                   <input
+                    formControlName="password"
                     id="Password"
                     name="Password"
                     type="password"
@@ -139,6 +149,7 @@
               <div>
                 <div class="">
                   <button
+                    (click)="(loginForm.submit)"
                     type="submit"
                     class="justify-center rounded-lg bg-[#353839] w-[30%] px-3 py-1.5 text-lg font-semibold leading-6 text-white shadow-lg hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
@@ -231,13 +242,20 @@
         </div>
         <div class="m-1">
           <div class="text-center">
-            <form class="space-y-6" action="#" method="POST">
+            <form
+              [formGroup]="signupForm"
+              (ngSubmit)="onsubmit(signupForm)"
+              class="space-y-6"
+              action="#"
+              method="POST"
+            >
               <div class="flex flex-row">
                 <label for="name" class="m-2 font-semibolds text-xl"
                   >Name</label
                 >
                 <div class="m-2 w-full">
                   <input
+                    formControlName="name"
                     id="name"
                     name="name"
                     type="text"
@@ -254,6 +272,7 @@
                 >
                 <div class="m-2 w-full">
                   <input
+                    formControlName="email"
                     id="email"
                     name="email"
                     type="email"
@@ -271,6 +290,7 @@
                 >
                 <div class="m-2 w-full">
                   <input
+                    formControlName="password"
                     id="Password"
                     name="Password"
                     type="password"
@@ -288,8 +308,9 @@
                 > -->
                 <div class="m-2 w-full">
                   <input
-                    id="Password"
-                    name="Password"
+                    formControlName="confirmPassword"
+                    id="ConfirmPassword"
+                    name="Confirm Password"
                     type="password"
                     placeholder="Confirm Password"
                     autocomplete=""
@@ -310,6 +331,7 @@
               <div>
                 <div class="">
                   <button
+                    (click)="(signupForm.submit)"
                     type="submit"
                     class="justify-center rounded-lg bg-[#353839] w-[30%] px-3 py-1.5 text-lg font-semibold leading-6 text-white shadow-lg hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
